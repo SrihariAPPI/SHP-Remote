@@ -16,7 +16,7 @@ Combining embedded systems, Python automation, WebRTC, WebSockets and modern web
 <p align="center">
   <a href="https://shpremote.vercel.app/"><strong>🌐 LIVE DEMO</strong></a>
   &nbsp; • &nbsp;
-  <a href="https://github.com/SrihariAPPI/Esp32-Remote"><strong>💻 SOURCE CODE</strong></a>
+  <a href="https://github.com/SrihariAPPI/SHP-Remote"><strong>💻 SOURCE CODE</strong></a>
 </p>
 
 ---
