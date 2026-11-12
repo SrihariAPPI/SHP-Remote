@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SHP Remote — Wireless Laptop Controller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand-text">SHP REMOTE</div>
+    <div class="status-indicator">
+      <span class="indicator-dot offline" id="companionDot"></span>
+      <span id="companionStatusText">Connecting to ESP32...</span>
+    </div>
+  </header>
+
+  <nav class="module-tabs">
+    <button class="tab-btn active" data-tab="mouse">Mouse</button>
+    <button class="tab-btn" data-tab="keyboard">Keyboard</button>
+    <button class="tab-btn" data-tab="media">Media</button>
+    <button class="tab-btn" data-tab="shortcuts">Shortcuts</button>
+    <button class="tab-btn" data-tab="power">Power</button>
+  </nav>
+
+  <main class="view-container">
+    <section id="module-mouse" class="view-module active">
+      <div class="touchpad-frame" id="touchpad">
+        <div class="touchpad-hint">Touchpad · Single finger move · Tap to click · Two fingers scroll</div>
+      </div>
+      <div class="mouse-actions-bar">
+        <button class="btn btn-click" id="btnLeft">LEFT CLICK</button>
+        <button class="btn btn-click" id="btnMiddle">MID</button>
+        <button class="btn btn-click" id="btnRight">RIGHT CLICK</button>
+      </div>
+    </section>
+
+    <section id="module-keyboard" class="view-module">
+      <div class="text-send-form">
+        <input type="text" id="keyboardTextInput" placeholder="Type text to send to Windows 11...">
+        <button class="btn btn-primary" id="btnSendText">Send</button>
+      </div>
+      <div class="virtual-key-grid">
+        <button class="key-btn" data-key="ESCAPE">Esc</button>
+        <button class="key-btn" data-key="TAB">Tab</button>
+        <button class="key-btn" data-key="BACKSPACE">Bksp</button>
+        <button class="key-btn" data-key="ENTER">Enter</button>
+        <button class="key-btn" data-key="UP">▲</button>
+        <button class="key-btn" data-key="DOWN">▼</button>
+        <button class="key-btn" data-key="LEFT">◄</button>
+        <button class="key-btn" data-key="RIGHT">►</button>
+        <button class="key-btn key-wide" data-key="SPACE">Spacebar</button>
+      </div>
+    </section>
+
+    <section id="module-media" class="view-module">
+      <div class="volume-buttons">
+        <button class="btn" id="btnVolDown">VOL −</button>
+        <button class="btn" id="btnMute">MUTE</button>
+        <button class="btn" id="btnVolUp">VOL +</button>
+      </div>
+      <div class="playback-buttons" style="margin-top: 10px;">
+        <button class="btn" id="btnPrev">|◀ Prev</button>
+        <button class="btn btn-primary" id="btnPlayPause">▶/❚❚ Play/Pause</button>
+        <button class="btn" id="btnNext">Next ▶|</button>
+      </div>
+    </section>
+
+    <section id="module-shortcuts" class="view-module">
+      <div class="shortcuts-grid">
+        <button class="shortcut-btn" data-shortcut="alt_tab">Alt + Tab</button>
+        <button class="shortcut-btn" data-shortcut="win_d">Win + D</button>
+        <button class="shortcut-btn" data-shortcut="win_e">Win + E</button>
+        <button class="shortcut-btn" data-shortcut="win_r">Win + R</button>
+        <button class="shortcut-btn" data-shortcut="ctrl_shift_esc">Task Mgr</button>
+        <button class="shortcut-btn" data-shortcut="ctrl_c">Ctrl + C</button>
+        <button class="shortcut-btn" data-shortcut="ctrl_v">Ctrl + V</button>
+        <button class="shortcut-btn" data-shortcut="ctrl_z">Ctrl + Z</button>
+        <button class="shortcut-btn" data-shortcut="win_l">Win + L</button>
+      </div>
+    </section>
+
+    <section id="module-power" class="view-module">
+      <div class="power-buttons-list">
+        <button class="btn" id="btnPowerLock">Lock Workstation</button>
+        <button class="btn" id="btnPowerSleep">Sleep Laptop</button>
+        <button class="btn" id="btnPowerRestart">Restart Laptop</button>
+        <button class="btn" id="btnPowerShutdown">Shut Down Laptop</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "SHP Remote — ESP32 Wireless Windows Controller",
+  "description": "Production-grade DIY wireless remote controller for Windows 11 using ESP32 DevKit V1, mobile dashboard, and Python companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

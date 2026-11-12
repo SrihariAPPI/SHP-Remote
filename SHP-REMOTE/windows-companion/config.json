@@ -1,0 +1,15 @@
+{
+  "esp32_ip": "172.16.27.92",
+  "ws_port": 81,
+  "auth_token": "SHP_SECRET_TOKEN_2026",
+  "stream_token": "SHP_SECRET_TOKEN_2026",
+  "stream_port": 8082,
+  "stream_fps": 30,
+  "stream_quality": 70,
+  "webrtc_enabled": true,
+  "reconnect_interval_sec": 3,
+  "mouse_speed_multiplier": 1.0,
+  "allow_destructive_power": false,
+  "max_mouse_step": 300,
+  "description": "SHP Remote Windows 11 Companion with WebRTC & Station Mode"
+}

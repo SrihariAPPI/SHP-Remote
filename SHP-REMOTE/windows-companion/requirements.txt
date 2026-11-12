@@ -1,0 +1,7 @@
+pyautogui>=0.9.54
+websocket-client>=1.7.0
+mss>=9.0.1
+Pillow>=10.0.0
+# WebRTC Desktop Streaming (High-Performance Low-Latency P2P Video)
+aiortc>=1.9.0
+av>=12.0.0
